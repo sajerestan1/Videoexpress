@@ -1,0 +1,1 @@
+See the local deliverable `stanley-sajer-world-history-workflow.md` in this chat's outputs folder for the full workflow.
