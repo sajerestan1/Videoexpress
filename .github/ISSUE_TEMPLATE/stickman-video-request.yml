@@ -1,0 +1,40 @@
+name: Stickman video request
+description: Record a production brief for the browser agent (creating an issue does not start rendering).
+title: "[Stickman Video] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "This is a planning brief. To generate the video, use stickman-agent/START_HERE.md in ChatGPT Work with an authenticated VideoExpress browser. Do not put private details or credentials in this public issue."
+  - type: input
+    id: topic
+    attributes:
+      label: Story topic
+      description: What should the video be about?
+      placeholder: A stickman finds a lost puppy
+    validations:
+      required: true
+  - type: dropdown
+    id: ratio
+    attributes:
+      label: Aspect ratio
+      options:
+        - Landscape 16:9
+        - Vertical 9:16
+    validations:
+      required: true
+  - type: input
+    id: duration
+    attributes:
+      label: Target duration (optional)
+      placeholder: 60 seconds
+  - type: input
+    id: voice
+    attributes:
+      label: Narrator (optional)
+      placeholder: Beau Whitaker
+  - type: textarea
+    id: notes
+    attributes:
+      label: Tone and scene requirements
+      placeholder: Funny, family-friendly, minimal background music
